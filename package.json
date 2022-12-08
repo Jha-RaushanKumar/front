@@ -66,5 +66,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.137.1:4000"
+  "proxy": "https://getgrocery-1cle.onrender.com:10000"
 }
