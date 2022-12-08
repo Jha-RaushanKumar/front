@@ -46,9 +46,6 @@ const Payment = ({ history }) => {
   };
 
   const submitHandler = async (e) => {
-    e.preventDefault();
-
-    payBtn.current.disabled = true;
 
     try {
       const config = {

@@ -67,17 +67,20 @@ function App() {
   window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
+
     <Router>
+
       <Header />
-      <ScrollToTop />
-
-      {isAuthenticated && <UserOptions user={user} />}
-
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
           <ProtectedRoute exact path="/process/payment" component={Payment} />
         </Elements>
       )}
+      <ScrollToTop />
+
+      {isAuthenticated && <UserOptions user={user} />}
+
+
 
       <Switch>
         <Route exact path="/" component={Home} />
