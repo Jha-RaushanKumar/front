@@ -1,0 +1,157 @@
+.firstHomePage {
+    background-image: url('../../images/back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.firstHomePage h1 {
+    margin: 2vmax;
+    color: rgb(194, 35, 62);
+    font: 600 2.5vmax "Cambria";
+
+}
+
+.firstHomePage p span {
+    font: 600 2.5vmax "Cambria";
+    color: rgb(80, 4, 90);
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.firstHomePage p {
+    margin: 3vmax;
+    font: 300 1.4vmax "Lucida Sans";
+    color: rgb(39, 39, 34);
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.firstHomePage a button {
+    margin-bottom: 10vmax;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 1vmax;
+    transition: all 0.5s;
+    width: 9vmax;
+    font: 500 1vmax "Cambria";
+}
+
+.firstHomePage a button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(201, 44, 44);
+}
+
+.firstHomePage::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    clip-path: polygon(100% 100%, 0 100%, 100% 100%);
+    max-width: 100%;
+}
+
+.productHead {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2vmax;
+    border-bottom: 1px solid rgba(171, 5, 46, 0.7);
+    width: 50vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgba(171, 5, 46, 0.7);
+}
+
+.container {
+    display: flex;
+    margin: 4vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    background-color: rgb(214, 214, 213);
+}
+
+.prodCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.7s;
+    padding-bottom: 0.5vmax;
+    border: 2px solid rgba(171, 5, 46, 0.7);
+    border-radius: 5px;
+
+}
+
+.prodCard img {
+    width: 14vmax;
+}
+
+.prodCard div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgba(33, 15, 101, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(162, 154, 149);
+}
+
+.prodCard .prodCard1 p {
+    color: rgba(50, 15, 3, 0.7);
+    margin: 1vmax 0.5vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+
+.prodCard .prodCard1 span {
+    color: rgba(188, 56, 8, 0.7);
+    margin: 1vmax 0.5vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+
+.prodCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+    transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+    .prodCard1 p {
+        font-size: 1.7vmax;
+    }
+
+    .prodCard1 div {
+        margin: 0vmax;
+        display: block;
+    }
+
+    .prodCard1 span {
+        font-size: 1.5vmax;
+    }
+
+    .prodCard1 div span {
+        margin: 0 0.5vmax;
+        font: 300 1vmax "Cambria";
+    }
+}
